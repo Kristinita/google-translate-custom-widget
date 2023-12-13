@@ -5,14 +5,6 @@
 *****************************************************/
 
 
-document.addEventListener("DOMContentLoaded", (event) => {
-	/* Подключаем виджет google translate */
-	/* Connecting the google translate widget */
-	let script = document.createElement("script");
-	script.src = `//translate.google.com/translate_a/element.js?cb=TranslateWidgetIsLoaded`;
-	document.getElementsByTagName("head")[0].appendChild(script);
-});
-
 function TranslateWidgetIsLoaded() {
 	TranslateInit(googleTranslateConfig);
 }
